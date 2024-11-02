@@ -5,6 +5,34 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0px;
+
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -20,14 +48,19 @@ body {
 
 /* Header Style Start  */
 
+
 .header_section {
-    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background: #e3e6f3;
     box-shadow: 0px 2px 15px rgb(172, 171, 171);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
 
 }
 
@@ -64,7 +97,7 @@ body {
 .nav_link li a.active::after {
     content: "";
     width: 25%;
-    height: 2px ;
+    height: 2px;
     background: #088178;
     position: absolute;
     bottom: -3px;
@@ -76,4 +109,37 @@ body {
     width: 30px;
     height: 30px;
 }
-/* Header style end  */
+
+/* Header style end */
+
+
+/* Hero section style */
+
+.hero {
+    background-image: url(/img/hero4.png);
+    height: 80ch;
+    width: 100%;
+    background-size: cover;
+    background-position: top 15% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero_title {
+    color: #088178;
+}
+
+.hero_btn {
+    border: none;
+    background-image: url(/img/button.png);
+    background-color: transparent;
+    padding: 14px 80px 14px 65px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #088178;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
