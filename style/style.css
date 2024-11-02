@@ -1,31 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan", sans-serif;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #e3e6f3;
+    width: 100%;
+    font-weight: 600;
+}
+
+
 /* Header Style Start  */
 
 .header_section {
-
+    height: 75px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0px 2px 15px rgb(172, 171, 171);
+
+}
+
+
+.nav_link {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
 }
- 
- .header_section .width_nav {
- width: 40%;
+
+.nav_link li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
 }
 
-.nav_link{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav_link a{
+.nav_link li a {
     text-decoration: none;
-    color: black;
+    color: #1a1a1a;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
-.nav_link .shopping_bag img{
+
+
+.nav_link li a:hover,
+.nav_link li a.active {
+    color: #088178;
+}
+
+
+
+.nav_link li a:hover::after,
+.nav_link li a.active::after {
+    content: "";
+    width: 25%;
+    height: 2px ;
+    background: #088178;
+    position: absolute;
+    bottom: -3px;
+    left: 20px;
+
+}
+
+.nav_link .shopping-bag img {
     width: 30px;
     height: 30px;
 }
-
-
-
+/* Header style end  */
