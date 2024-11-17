@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +158,7 @@ body {
 
 .feature-box {
     width: 180px;
-    padding: 10px 5px;
+    padding: 20px 10px;
     text-align: center;
     justify-items: center;
     border: 1px solid #cce7d0;
@@ -175,6 +176,7 @@ body {
 }
 
 .feature-box h6 {
+    font-weight: 700;
     display: inline-block;
     padding: 9px 15px;
     line-height: 1;
@@ -182,3 +184,106 @@ body {
     color: #088178;
     background-color: #fddde4;
 }
+
+
+.feature .feature-box:nth-child(2) h6{
+    background-color: #cdebbc ;
+}
+.feature .feature-box:nth-child(3) h6{
+    background-color: #d1e8f2 ;
+}
+.feature .feature-box:nth-child(4) h6{
+    background-color: #cdd4f8 ;
+}
+.feature .feature-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+.feature .feature-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
+
+/* Product section style start */
+.product{
+    padding: 0px 30px 80px 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.product p{
+    font-size: 18px;
+    color: #848484;
+    margin: 10px 0;
+}
+
+.pro-container{
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.pro-container .pro{
+    width: 23%;
+    min-width: 300px;
+    border: 1px solid #eff3e4;
+    border-radius: 25px; 
+    box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.06);
+    transition: ease-in-out;
+    position: relative;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+.pro-container .pro:hover{
+    box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.09);
+}
+
+.pro img{
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    border-radius: 35px;
+   }
+
+.pro .des{
+    text-align: start;
+    padding: 20px 10px;
+}
+.pro .des .cart-title{
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.pro .des span{
+    color:#848484;
+}
+
+.pro .des i{
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+.price{
+    color: #088178;
+    margin-top: 10px;
+}
+
+
+.pro a{
+    text-decoration: none;
+}
+
+.pro .cart{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    font-weight: 700;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px ;
+    right: 15px;
+}
+
+
+
